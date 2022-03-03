@@ -8,6 +8,8 @@
 REACT_APP_API_KEY="copy_paste_key_here"
 ```
 
+### `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
