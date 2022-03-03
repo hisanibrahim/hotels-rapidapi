@@ -34,12 +34,14 @@ const App = () => {
             <>
               <table>
                 <h4>{value.group}</h4>
-                {value.entities.map((value, key) => {
+                {value.entities.map((entity, key) => {
                   return (
                     <>
                       <tr>
                         {" "}
-                        <Link to="details">{`${value.name}`}</Link>
+                        <Link
+                          to={`destinations/${entity.destinationId}`}
+                        >{`${entity.name}`}</Link>
                       </tr>
                     </>
                   );

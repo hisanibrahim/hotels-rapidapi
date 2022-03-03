@@ -18,10 +18,8 @@ import reportWebVitals from "./reportWebVitals";
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<App />} />
-        <Route path="details" element={<Details />}></Route>
-      </Route>
+      <Route path="/" element={<App />}></Route>
+      <Route path="/destinations/:destinationId" element={<Details />}></Route>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
