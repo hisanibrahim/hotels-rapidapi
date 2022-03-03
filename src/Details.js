@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
-const App = () => {
+const Details = () => {
   const [apiData, setApiData] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -28,7 +27,7 @@ const App = () => {
   if (loading) return <p>Loading...</p>;
   else
     return (
-      <div className="App">
+      <div className="Details">
         {apiData.suggestions.map((value, key) => {
           return (
             <>
@@ -37,10 +36,7 @@ const App = () => {
                 {value.entities.map((value, key) => {
                   return (
                     <>
-                      <tr>
-                        {" "}
-                        <Link to="details">{`${value.name}`}</Link>
-                      </tr>
+                      <tr>{`${value.name}`}</tr>
                     </>
                   );
                 })}
@@ -52,4 +48,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Details;
