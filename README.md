@@ -4,7 +4,9 @@
 
 ### Create a .env file in the root of the project
 
+```.env
 REACT_APP_API_KEY="copy_paste_key_here"
+```
 
 ## Available Scripts
 
